@@ -9,8 +9,8 @@ The primary differences are:
 :set encoding=utf-8
 :set fileencoding=utf-8
 ```
-... which usually meant that, given a modern vim, the multibyte UTF8 characters were already rendering correctly, anyway.  If the user has a reason for not setting vim's encoding to utf-8, then vim-utf2ascii's search/replace would fail.
-* This 'vim-asciiplz' variant is designed to work with the `latin1` encoding.
+... which usually meant that, given a modern vim, the multibyte UTF-8 characters were already rendering correctly.  If the user has a reason for not setting vim's encoding to UTF-8, then vim-utf2ascii's search/replace would fail.
+* This 'vim-asciiplz' variant is designed to work with other encodings, such as `latin1`.
 
 ## Example
 
@@ -30,7 +30,7 @@ call asciiplz#ReplaceUTF()
 
 The following will:
 * Bind your F4 key to the vim-asciiplz functionality
-* Make existing UTF-8 characters show up as <HEX><HEX> values, using the 'SpecialKey' color.
+* Make existing UTF-8 characters show up as `<HEX><HEX><HEX>` values, using the 'SpecialKey' color.
 
 ```vimrc
 set isprint=|set display+=uhex
