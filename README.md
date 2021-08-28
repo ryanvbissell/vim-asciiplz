@@ -1,7 +1,7 @@
 # AsciiPlz
 
 
-vim-asciiplz is a variation of https://github.com/dsummersl/vim-utf2ascii
+`vim-asciiplz` is a variation of https://github.com/dsummersl/vim-utf2ascii
 
 The primary differences are:
 * As implemented, the original only worked if the vim user to set the following:
@@ -10,7 +10,7 @@ The primary differences are:
 :set fileencoding=utf-8
 ```
 ... which usually meant that, given a modern vim, the multibyte UTF8 characters were already rendering correctly, anyway.  If the user has a reason for not setting vim's encoding to utf-8, then vim-utf2ascii's search/replace would fail.
-* This 'vim-asciiplz' variant is designed to work with the `latin1` encoding.  Additionally, 
+* This 'vim-asciiplz' variant is designed to work with the `latin1` encoding.
 
 ## Example
 
@@ -27,6 +27,10 @@ call asciiplz#ReplaceUTF()
 ```
 
 ## Recommended .vimrc configuration
+
+The following will:
+* Bind your F4 key to the vim-asciiplz functionality
+* Make existing UTF-8 characters show up as <HEX><HEX> values, using the 'SpecialKey' color.
 
 ```vimrc
 set isprint=|set display+=uhex
